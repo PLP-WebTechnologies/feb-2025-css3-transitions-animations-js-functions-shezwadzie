@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #animatedBox {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+  }
+  
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-50px); }
+    60% { transform: translateY(0); }
+    100% { transform: translateY(-30px); }
+  }
+  
+  .animate {
+    animation: bounce 0.6s ease-in-out;
+  }
+  
